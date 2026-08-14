@@ -1,0 +1,33 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f7fb;color:#172033}
+.topbar{background:#172554;color:#fff;padding:15px 5%;display:flex;justify-content:space-between;align-items:center}
+.role{font-size:12px;background:#ffffff22;border:1px solid #ffffff44;border-radius:20px;padding:5px 9px;margin-left:10px}
+.container{width:min(1200px,92%);margin:25px auto}
+.auth-page{min-height:100vh;display:grid;place-items:center;padding:20px}
+.card{background:#fff;border-radius:14px;padding:22px;box-shadow:0 5px 20px #17203312;margin-bottom:20px}
+.auth-card{width:min(440px,100%)}
+h1,h2,h3{margin-top:0}
+.muted,.small{color:#64748b}.small{font-size:13px}
+.grid-form{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+label{display:flex;flex-direction:column;gap:7px;font-weight:600;font-size:14px}
+input,select,textarea{width:100%;padding:11px;border:1px solid #cbd5e1;border-radius:8px;background:#fff;font:inherit}
+input:focus,select:focus,textarea:focus{outline:2px solid #93c5fd;border-color:#3b82f6}
+.full{grid-column:1/-1}
+button{border:0;border-radius:8px;padding:11px 16px;font-weight:700;cursor:pointer}
+.primary{background:#2563eb;color:white}.secondary{background:#e2e8f0;color:#172033}
+.message{min-height:20px;font-size:14px}.error{color:#b91c1c}.success{color:#15803d}
+.section-head,.toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:800px}
+th,td{padding:12px;border-bottom:1px solid #e2e8f0;text-align:left;font-size:14px;vertical-align:top}
+th{background:#f8fafc}
+.badge{display:inline-block;padding:5px 9px;border-radius:20px;font-size:12px;font-weight:700}
+.badge.Pending{background:#fef3c7;color:#92400e}.badge.Approved{background:#dcfce7;color:#166534}.badge.Disapproved{background:#fee2e2;color:#991b1b}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.stat span{display:block;color:#64748b;font-size:13px}.stat strong{font-size:28px}
+.toolbar input{flex:1;min-width:220px}.toolbar select{width:auto;min-width:150px}
+.action-btn{padding:7px 10px;font-size:12px}
+.modal{position:fixed;inset:0;background:#0008;display:grid;place-items:center;padding:20px}
+.hidden{display:none}.modal-box{background:#fff;padding:24px;border-radius:14px;width:min(500px,100%)}
+.modal-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:18px}
+@media(max-width:700px){.grid-form,.stats{grid-template-columns:1fr}.container{width:94%}.topbar{padding:14px 3%}}

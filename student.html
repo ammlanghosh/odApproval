@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student OD Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div><strong>OD Approval System</strong><span class="role">Student</span></div>
+  <button id="logoutBtn" class="secondary">Logout</button>
+</header>
+
+<main class="container">
+  <section class="card">
+    <div class="section-head">
+      <div>
+        <h2>Submit OD Request</h2>
+        <p class="muted">Fill in the event details and submit your request.</p>
+      </div>
+    </div>
+
+    <form id="odForm" class="grid-form">
+      <label>Registration No
+        <input id="regNo" required maxlength="30">
+      </label>
+      <label>Name
+        <input id="stdName" required maxlength="100">
+      </label>
+      <label>Email ID
+        <input id="stdEmail" type="email" required readonly>
+      </label>
+      <label>Course Code
+        <input id="courseCode" required maxlength="30">
+      </label>
+      <label>Course SLOT
+        <input id="courseSlot" required maxlength="20" placeholder="e.g. A / B / C">
+      </label>
+      <label>Event Name
+        <input id="eventName" required maxlength="200">
+      </label>
+      <label>Date of Event
+        <input id="eventDate" type="date" required>
+      </label>
+      <label>Event Incharge Name
+        <input id="inchargeName" required maxlength="100">
+      </label>
+      <label>Contact
+        <input id="contact" required maxlength="20" placeholder="Phone number">
+      </label>
+      <div class="full">
+        <button class="primary" type="submit">Submit OD Request</button>
+        <p id="formMessage" class="message"></p>
+      </div>
+    </form>
+  </section>
+
+  <section class="card">
+    <div class="section-head">
+      <div>
+        <h2>My OD Requests</h2>
+        <p class="muted">Track the approval status of your submitted requests.</p>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Event</th><th>Date</th><th>Course</th><th>Status</th><th>Admin Comment</th>
+          </tr>
+        </thead>
+        <tbody id="studentRequests"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="app.js"></script>
+</body>
+</html>
