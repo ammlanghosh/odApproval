@@ -2,8 +2,8 @@
    OD Approval Application
    Replace these two values with your Supabase project settings.
    ========================= */
-const SUPABASE_URL = "YOUR_SUPABASE_PROJECT_URL";
-const SUPABASE_ANON_KEY = "YOUR_SUPABASE_ANON_KEY";
+const SUPABASE_URL = "https://afptzgjevuopiajrsieo.supabase.co/rest/v1/";
+const SUPABASE_ANON_KEY = "sb_publishable_cHm_Msc7f9YIKw7D7sjkfg_i0qPJbvf";
 
 const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
