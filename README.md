@@ -136,3 +136,8 @@ For production use, also consider adding:
 - file/document upload
 - duplicate OD prevention
 - department/course-based admin permissions
+
+## Sample UID password
+student@test.com / student@12345
+admin@test.com / admin12345
+
